@@ -65,7 +65,65 @@
         </div>
       </div>
     </div>
-    
+    <carousel :items="4" :margin="10" :autoplay="true" :mouseDrag="true" :stagePadding="50" :dots="true" :autoplayHoverPause="true">
+          <div class="slider-card">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="../../src/assets/images/slide-1.jpg" alt="" >
+						</div>
+						<h5 class="mb-0 text-center"><b>Threat intelligence</b></h5>
+						<p class="text-center p-4">A SOC should have access to the latest threat intelligence data, which can help identify potential security threats and vulnerabilities.</p>
+					</div>
+					<div class="slider-card">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="../../src/assets/images/slide-2.jpg" alt="">
+						</div>
+						<h5 class="mb-0 text-center"><b>Security information and event management (SIEM)</b></h5>
+						<p class="text-center p-4">A SIEM system is used to collect and analyze security event data from various sources within the organization's network. This can help detect security incidents in real-time and provide insights for improving security posture.</p>
+					</div>
+					<div class="slider-card">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="../../src/assets/images/slide-3.jpg" alt="">
+						</div>
+						<h5 class="mb-0 text-center"><b>Incident response</b></h5>
+						<p class="text-center p-4">A SOC should have a documented incident response plan in place that outlines the steps that should be taken in the event of a security breach or incident. This includes procedures for containment, investigation, and recovery.</p>
+					</div>
+					<div class="slider-card">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="../../src/assets/images/slide-4.jpg" alt="">
+						</div>
+						<h5 class="mb-0 text-center"><b>Monitoring and analysis</b></h5>
+						<p class="text-center p-4">The SOC should have a team of analysts who are responsible for monitoring the network for potential security threats and analyzing security event data to identify patterns and trends.</p>
+					</div>
+          <div class="slider-card">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="../../src/assets/images/slide-5.jpg" alt="">
+						</div>
+						<h5 class="mb-0 text-center"><b>Threat hunting</b></h5>
+						<p class="text-center p-4">The SOC team should also proactively search for potential security threats that may not have been detected by automated monitoring systems.</p>
+					</div>
+					<div class="slider-card">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="../../src/assets/images/slide-6.jpg" alt="">
+						</div>
+						<h5 class="mb-0 text-center"><b>Forensics and investigations</b></h5>
+						<p class="text-center p-4"> If a security breach does occur, the SOC should have the tools and expertise necessary to conduct a forensic investigation to determine the cause and scope of the breach.</p>
+					</div>
+          <div class="slider-card">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="../../src/assets/images/slide-1.jpg" alt="">
+						</div>
+						<h5 class="mb-0 text-center"><b>Communication and reporting</b></h5>
+						<p class="text-center p-4">The SOC should communicate with stakeholders across the organization to keep them informed about security threats and incidents. They should also provide regular reports on security metrics and trends to senior management.</p>
+					</div>
+          <div class="slider-card">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="../../src/assets/images/slide-2.jpg" alt="">
+						</div>
+						<h5 class="mb-0 text-center"><b>Continuous improvement</b></h5>
+						<p class="text-center p-4">The SOC should be committed to continuous improvement, regularly reviewing and updating their processes, procedures, and technologies to stay ahead of evolving security threats.</p>
+					</div>
+          
+</carousel>
     <!-- <signup-form></signup-form>
     <examples-section></examples-section>
     <download-section></download-section> -->
@@ -86,6 +144,7 @@ import SignupForm from './components/SignupForm';
 import ExamplesSection from './components/ExamplesSection';
 import DownloadSection from './components/DownloadSection';
 import Plans from './components/Plans';
+import carousel from 'vue-owl-carousel'
 
 export default {
   name: 'index',
@@ -104,7 +163,8 @@ export default {
     // SignupForm,
     // ExamplesSection,
     // DownloadSection
-    Plans
+    Plans,
+    carousel 
   }
 };
 </script>
