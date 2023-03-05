@@ -43,7 +43,7 @@
           <p>About us</p>
         </a>
       </li>
-      
+
       <li class="nav-item">
         <a
           class="nav-link"
@@ -163,5 +163,6 @@ export default {
 </script>
 
 <style scoped>
+
 .img{width: 150px}
 </style>
