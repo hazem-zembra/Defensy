@@ -1,10 +1,9 @@
 @include form-control-placeholder($default-color, .8);
 
 .form-control {
-    background-color: $transparent-bg;
     border: 1px solid $light-gray;
-    border-radius: $btn-round-radius;
     color: $black-color;
+    opacity: 0.9;
     line-height: normal;
     font-size: $font-size-small;
     height: 100%;
@@ -28,7 +27,6 @@
             background-color: $transparent-bg;
         }
     }
-
     .has-success &,
     .has-error &,
     .has-success &:focus,

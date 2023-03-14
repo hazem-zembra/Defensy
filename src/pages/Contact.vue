@@ -1,0 +1,183 @@
+<template>
+  <div class="page-header clear-filter" filter-color="orange">
+    <div
+      class="page-header-image"
+      style="background-image: url('img/contact.jpeg')"
+    ></div>
+      <section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="typerclass">Contact Us</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-12 col-md-12">
+					<div class="wrapper">
+						<div class="row justify-content-center">
+							<div class="col-lg-8 mb-5">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="dbox w-100 text-center">
+					        		<div class="icon d-flex align-items-center justify-content-center">
+					        			<span class="fa fa-map-marker-alt"></span>
+					        		</div>
+					        		<div class="text">
+						            <p><span style="color:white;font-weight: bold;">Address:</span>Pôle technologique Ghazela, Tunis</p>
+						          </div>
+					          </div>
+									</div>
+									<div class="col-md-4">
+										<div class="dbox w-100 text-center">
+					        		<div class="icon d-flex align-items-center justify-content-center">
+					        			<span class="fa fa-phone"></span>
+					        		</div>
+					        		<div class="text">
+						            <p><span style="color:white;font-weight: bold;">Phone:</span> <a href="tel://1234567920">+216 54 33 00 20</a></p>
+						          </div>
+					          </div>
+									</div>
+									<div class="col-md-4">
+										<div class="dbox w-100 text-center">
+					        		<div class="icon d-flex align-items-center justify-content-center">
+					        			<span class="fa fa-paper-plane"></span>
+					        		</div>
+					        		<div class="text">
+						            <p><span style="color:white;font-weight: bold;">Email:</span> <a href="mailto:info@yoursite.com">contact@defensy.io</a></p>
+						          </div>
+					          </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-8">
+								<div class="contact-wrap">
+                  <h3 class="mb-4 text-center">Please, fill in the form below and we'll get back ASAP.</h3>
+                  <div id="form-message-success" class="mb-4 w-100 text-center">
+				            Our Professional Services use open source security tools, customized by experts and leveraging the latest technology, to enhance clients' security posture and protect their systems and data.
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Business Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<input type="text" class="form-control" name="email" id="email" placeholder="Company Website">
+												</div>
+											</div>
+                      <div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="First Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<input type="text" class="form-control" name="email" id="email" placeholder="Last Name">
+												</div>
+											</div>
+                      <div class="col-md-6">
+												<div class="form-group">
+													<input type="email" class="form-control" name="name" id="name" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<input type="text" class="form-control" name="email" id="email" placeholder="Business Type">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Package Details">
+												</div>
+											</div>
+                      <div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Project Budget">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    </div>
+</template>
+<script>
+import {Button, FormGroupInput } from '@/components';
+export default {
+  name: 'login-page',
+  bodyClass: 'login-page',
+  components: {
+    [Button.name]: Button,
+    [FormGroupInput.name]: FormGroupInput
+  }
+};
+</script>
+<style>
+.ftco-section {
+  padding: 7em 0; }
+.dbox {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 0 20px; }
+  @media (min-width: 768px) {
+    .dbox {
+      margin-bottom: 0;
+      padding: 0; } }
+  .dbox p {
+    margin-bottom: 0; }
+    .dbox p span {
+      font-weight: 500;
+      color: #03224c;
+      display: block; }
+    .dbox p a {
+      color: rgba(255, 255, 255, 0.8); }
+  .dbox .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #03224c;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    .dbox .icon span {
+      font-size: 20px;
+      color: #fff; }
+  .dbox .text {
+    width: 100%; }
+    .w-100 {
+  width: 100% !important; }
+  .d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+  .contact-wrap h3 {
+  color: #fff; }
+  .contactForm .label {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600; }
+.contactForm .form-control {
+  border: none; }
+.contactForm .btn {
+  width: 100%;
+  display: block; }
+</style>

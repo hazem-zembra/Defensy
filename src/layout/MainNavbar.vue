@@ -57,7 +57,7 @@
       <li class="nav-item">
         <a
           class="nav-link"
-          href=""
+          href="#/contact"
           target="_blank"
         >
           <i class="now-ui-icons ui-1_email-85"></i>
