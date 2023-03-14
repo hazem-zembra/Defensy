@@ -32,6 +32,16 @@
           <p>Home</p>
         </a>
       </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#/soar"
+          target="_blank"
+        >
+          <i class="now-ui-icons ui-1_email-85"></i>
+          <p>SOAR</p>
+        </a>
+      </li>
 
       <li class="nav-item">
         <a
