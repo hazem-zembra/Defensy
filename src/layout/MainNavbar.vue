@@ -5,6 +5,7 @@
     :transparent="transparent"
     :color-on-scroll="colorOnScroll"
     menu-classes="ml-auto"
+
   >
     <template>
       <a href="https://www.defensy.io/" target="_blank">
@@ -173,6 +174,8 @@ export default {
 </script>
 
 <style scoped>
-
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
 .img{width: 150px}
 </style>
