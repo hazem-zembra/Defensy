@@ -89,7 +89,9 @@
             border-radius: $border-radius-small;
         }
     }
-
+    .ml-auto, .mx-auto {
+        margin-left: auto !important;
+    }
     .logo-container{
         width: 27px;
         height: 27px;
