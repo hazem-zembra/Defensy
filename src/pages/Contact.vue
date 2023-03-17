@@ -5,16 +5,13 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-12 col-md-12">
-						
 						<div class="wrapper justify-content-center">
 							<div class="row justify-content-center">
-								
-							<div class="col-lg-8 text-center mb-3 mt-5">
-								<h2 class="typerclass">Contact Us</h2>
-							</div>
-							<div class="col-lg-4 text-center mb-3 mt-5">
-							
-						</div>
+								<div class="col-lg-8 text-center mb-3 mt-5">
+									<h2 class="typerclass">Contact Us</h2>
+								</div>
+								<div class="col-lg-4 text-center mb-3 mt-5">
+								</div>
 								<div class="col-lg-8 ">
 									<div class="contact-wrap">
 										<h3 class="mb-4 text-center">Please, fill in the form below and we'll get back ASAP.
@@ -27,62 +24,66 @@
 										<form method="POST" id="contactForm" name="contactForm" class="contactForm">
 											<div class="row">
 												<div class="col-md-6">
-													<div class="form-group">
-														<input type="text" class="form-control" name="name" id="name"
-															placeholder="Business Name">
+													<div class="input-group">
+														<input type="text" class="form-control" name="first_name" id="first_name" v-model="formData.first_name"
+															placeholder="First Name" required>
 													</div>
 												</div>
 												<div class="col-md-6">
-													<div class="form-group">
-														<input type="text" class="form-control" name="email" id="email"
-															placeholder="Company Website">
+													<div class="input-group">
+														<input type="text" class="form-control" name="last_name" id="last_name" v-model="formData.last_name"
+															placeholder="Last Name" required>
 													</div>
 												</div>
 												<div class="col-md-6">
-													<div class="form-group">
-														<input type="text" class="form-control" name="name" id="name"
-															placeholder="First Name">
+													<div class="input-group">
+														<input type="text" class="form-control" name="business_name" id="business_name" v-model="formData.business_name"
+															placeholder="Business Name" required>
 													</div>
 												</div>
 												<div class="col-md-6">
-													<div class="form-group">
-														<input type="text" class="form-control" name="email" id="email"
-															placeholder="Last Name">
+													<div class="input-group">
+														<span class="input-group-text" id="basic-addon3"><i class="fa fa-globe"></i></span>
+														<input type="text" class="form-control" name="c_website" id="c_website" v-model="formData.c_website"
+															placeholder="Company Website" aria-describedby="basic-addon3" required>
+													</div>
+												</div>
+												
+												<div class="col-md-6">
+													<div class="input-group">
+														<input type="email" class="form-control" name="email" id="email" v-model="formData.email"
+															placeholder="E-mail" required>
 													</div>
 												</div>
 												<div class="col-md-6">
-													<div class="form-group">
-														<input type="email" class="form-control" name="name" id="name"
-															placeholder="Email">
+													<div class="input-group">
+														<input type="text" class="form-control" name="business_type" id="business_type" v-model="formData.business_type"
+															placeholder="Business Type" required>
 													</div>
 												</div>
 												<div class="col-md-6">
-													<div class="form-group">
-														<input type="text" class="form-control" name="email" id="email"
-															placeholder="Business Type">
+													<div class="input-group">
+														<input type="text" class="form-control" name="package_detail" id="package_detail" v-model="formData.package_detail"
+															placeholder="Package Details" required>
 													</div>
 												</div>
 												<div class="col-md-6">
-													<div class="form-group">
-														<input type="text" class="form-control" name="subject" id="subject"
-															placeholder="Package Details">
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="form-group">
-														<input type="text" class="form-control" name="subject" id="subject"
-															placeholder="Project Budget">
+													<div class="input-group">
+														<input type="text" class="form-control" name="project_budget" id="project_budget" v-model="formData.project_budget"
+															placeholder="Project Budget" required>
+															<span class="input-group-text">$</span>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<textarea name="message" class="form-control" id="message" cols="30"
-															rows="8" placeholder="Message"></textarea>
+														<textarea name="message" class="form-control" id="message" v-model="formData.message" cols="30"
+															rows="8" placeholder="Message..." required></textarea>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<input type="submit" value="Send Message" class="btn btn-primary mx-auto">
+														<input type="submit" value="Send Message"
+															class="btn btn-primary mx-auto">
 														<div class="submitting"></div>
 													</div>
 												</div>
@@ -139,6 +140,21 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Button, FormGroupInput } from '@/components';
 export default {
+	data(){
+		return {
+			formData : {
+				first_name : '',
+				last_name : '',
+				business_name : '',
+				c_website : '',
+				email : '',
+				business_type : '',
+				package_detail : '',
+				project_budget : '',
+				message : ''
+			}
+		};
+	},
 	name: 'login-page',
 	bodyClass: 'login-page',
 	components: {

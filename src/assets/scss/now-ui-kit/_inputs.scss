@@ -1,81 +1,81 @@
 @include form-control-placeholder($black-color,1);
 
-.form-control {
-    border: 1px solid $light-gray;
-    color: $black-color;
-    opacity: 0.9;
-    line-height: normal;
-    font-size: $font-size-small;
-    height: 100%;
-    @include transition-input-focus-color();
-    @include box-shadow(none);
+// .form-control {
+//     border: 1px solid $light-gray;
+//     color: $black-color;
+//     opacity: 0.9;
+//     line-height: normal;
+//     font-size: $font-size-small;
+//     height: 100%;
+//     @include transition-input-focus-color();
+//     @include box-shadow(none);
 
-    .has-success &{
-        border-color: $light-gray;
-    }
+//     .has-success &{
+//         border-color: $light-gray;
+//     }
 
-    &:focus{
-        border: 1px solid $primary-color;
-        @include box-shadow(none);
-        outline: 0 !important;
-        color: $black-color;
+//     &:focus{
+//         border: 1px solid $primary-color;
+//         @include box-shadow(none);
+//         outline: 0 !important;
+//         color: $black-color;
 
-        & + .input-group-text,
-        & ~ .input-group-text{
-            border: 1px solid $primary-color;
-            border-left: none;
-            background-color: $transparent-bg;
-        }
-    }
-    .has-success &,
-    .has-error &,
-    .has-success &:focus,
-    .has-error &:focus{
-        @include box-shadow(none);
-    }
+//         & + .input-group-text,
+//         & ~ .input-group-text{
+//             border: 1px solid $primary-color;
+//             border-left: none;
+//             background-color: $transparent-bg;
+//         }
+//     }
+//     .has-success &,
+//     .has-error &,
+//     .has-success &:focus,
+//     .has-error &:focus{
+//         @include box-shadow(none);
+//     }
 
-    .has-success &:focus{
-        border-color: lighten($success-color, 5%);
-    }
+//     .has-success &:focus{
+//         border-color: lighten($success-color, 5%);
+//     }
 
 
-    .has-danger &,
-    .has-success &{
-        &.form-control-success,
-        &.form-control-danger{
-            background-image: none;
-        }
-    }
+//     .has-danger &,
+//     .has-success &{
+//         &.form-control-success,
+//         &.form-control-danger{
+//             background-image: none;
+//         }
+//     }
 
-    .has-danger &{
-        border-color: lighten($danger-color, 30%);
-        color: $danger-color;
-        background-color: rgba(222,222,222, .1);
+//     .has-danger &{
+//         border-color: lighten($danger-color, 30%);
+//         color: $danger-color;
+//         background-color: rgba(222,222,222, .1);
 
-        &:focus{
-            background-color: $white-color;
-        }
-    }
+//         &:focus{
+//             background-color: $white-color;
+//         }
+//     }
 
-    & + .form-control-feedback{
-        border-radius: $border-radius-large;
-        font-size: $font-size-base;
-        margin-top: -7px;
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        vertical-align: middle;
-    }
+//     & + .form-control-feedback{
+//         border-radius: $border-radius-large;
+//         font-size: $font-size-base;
+//         margin-top: -7px;
+//         position: absolute;
+//         right: 10px;
+//         top: 50%;
+//         vertical-align: middle;
+//     }
 
-    .open &{
-        border-radius: $border-radius-large $border-radius-large 0 0;
-        border-bottom-color: transparent;
-    }
+//     .open &{
+//         border-radius: $border-radius-large $border-radius-large 0 0;
+//         border-bottom-color: transparent;
+//     }
 
-    // & + .input-group-text{
-    //     background-color: $white-bg;
-    // }
-}
+//     & + .input-group-text{
+//         background-color: $white-bg;
+//     }
+// }
 
 .has-success,
 .has-danger{
