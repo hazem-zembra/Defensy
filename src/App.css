@@ -1,0 +1,13 @@
+.border-radius-left{
+  border-radius: 0 5px 5px 0 !important;
+}
+.border-radius{
+  border-radius: 5px !important;
+}
+.form-control-no-box{
+  box-shadow: none !important;
+}
+.box-shadow:focus-within{
+  border-radius: 5px ! important;
+  box-shadow: 0 0 0 4px rgba(44, 168, 255, .3) !important;
+}
