@@ -24,48 +24,17 @@
     </template>
     <template slot="navbar-menu">
       <li class="nav-item">
-        <a
-          class="nav-link"
-          href=""
-          target="_blank"
-        >
-          <i class="now-ui-icons shopping_shop"></i>
-          <p>Home</p>
-        </a>
+        <router-link to="" class="nav-link"><i class="now-ui-icons shopping_shop"></i><p>Home</p></router-link>
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link"
-          href="/#/soar"
-          target="_blank"
-        >
-          <i class="now-ui-icons ui-1_email-85"></i>
-          <p>SOAR</p>
-        </a>
+        <router-link to="/soar" class="nav-link"><i class="now-ui-icons ui-1_email-85"></i><p>SOAR</p></router-link>
       </li>
-
       <li class="nav-item">
-        <a
-          class="nav-link"
-          href=""
-          target="_blank"
-        >
-          <i class="now-ui-icons business_bulb-63"></i>
-          <p>About us</p>
-        </a>
+        <router-link to="" class="nav-link"><i class="now-ui-icons business_bulb-63"></i><p>About us</p></router-link>
       </li>
-
       <li class="nav-item">
-        <a
-          class="nav-link"
-          href="#/contact"
-          target="_blank"
-        >
-          <i class="now-ui-icons ui-1_email-85"></i>
-          <p>Contact us</p>
-        </a>
+        <router-link to="/contact" class="nav-link"><i class="now-ui-icons ui-1_email-85"></i><p>Contact us</p></router-link>
       </li>
-
       <!-- uncomment dropdown and nav link in components down below too -->
       <!-- <drop-down
         tag="li"
@@ -174,8 +143,6 @@ export default {
 </script>
 
 <style scoped>
-.ml-auto, .mx-auto {
-    margin-left: auto !important;
-}
+
 .img{width: 150px}
 </style>

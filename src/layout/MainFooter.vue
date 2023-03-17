@@ -18,9 +18,7 @@
             </a>
           </li>
           <li>
-            <a href="#/contact">
-              Contact Us
-            </a>
+            <router-link to="/contact">Contact Us</router-link>
           </li>
         </ul>
       </nav>
