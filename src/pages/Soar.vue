@@ -5,167 +5,172 @@
         class="page-header-image"
         style="background-image: url('img/bg3.jpg')"
       ></div>
-      <br />
       <div class="content-center row">
         <div class="colcol-6">
           <img height="250" src="img/soar.png" alt="" />
         </div>
         <div class="col-6">
-          <br />
-          <h2 style="font-weight: bold">Notifications.</h2>
+          <h2 class="font-weight-bold">Notifications.</h2>
           NIST CSF
           <span class="id-color-2">RS.CO-3:</span>
           Information is shared consistent with response plans. <br />
           <div>
-            <button href="middle" type="button" class="btn btn-primary">
+            <button
+              href="middle"
+              type="button"
+              class="btn btn-primary"
+              @click="n()"
+            >
               Show me more
             </button>
           </div>
         </div>
         <div class="col-6">
-          <h2 style="font-weight: bold">Workflows and Orchestration.</h2>
+          <h2 class="font-weight-bold">Workflows and Orchestration.</h2>
           NIST CSF
           <span class="id-color-2">RS.CO-2:</span>
           Incidents are reported consistent with established criteria.
           <div>
-            <button type="button" class="btn btn-primary">Show me more</button>
+            <button type="button" class="btn btn-primary" @click="wao()">Show me more</button>
           </div>
         </div>
       </div>
     </div>
-    <br />
+    <div
+      class="container position-relative"
+      style="margin-top: -25vh; position: absolute"
+    >
+      <div class="hero-images-container d-flex justify-content-center">
+        <img src="img/laptop.png" alt="" />
+      </div>
+    </div>
     <div>
-      <div class="position-relative section-images">
-        <div class="container">
-          <br />
-          <div class="row justify-content-center">
-            <div class="hero-images-container">
+      <div class="container" id="n">
+        <div class="">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Workflows.</h5>
               <br />
-              <img src="img/laptop.png" alt="" />
+              <p class="card-text">
+                Workflows are made using a varitety of frameworks and tools.
+              </p>
             </div>
-
-            <ul
-              class="position-relative list-group list-group-horizontal-sm row"
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Orchestration and Playbooks</h5>
+              <p class="card-text">
+                SOCFortress crafts playbooks to orchestrate full response
+                chains.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Orchestrated Response.</h5>
+              <br />
+              <p class="card-text">
+                Playbooks integrate different actions and targets.
+              </p>
+              <br />
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Artifacts Collection.</h5>
+              <p class="card-text">
+                Playbooks execution can extend beyond the affected asset,
+                collecting additional artifacts.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">User Notifications.</h5>
+              <p class="card-text">
+                Different communication channels available as part of the
+                orchestrated response.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //hereeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+      <div class="accordion container" >
+        <div class="accordion-item" id="wao">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
             >
-              <li class="col-md-3">
-                <div id="middle" class="stat-card">
-                  <a href="#middle"></a>
-                  <div class="stat-icon right">
-                    <span class="bg-measure house"></span><i class="house"></i>
-                  </div>
-                  <h2 style="font-weight: bold">Workflows.</h2>
-                  <br />
-                  <h4 class="stat-num"></h4>
-                  <div class="subtext">
-                    <i class="glyphicon glyphicon-triangle-top txt-ontrack"></i>
-                    Workflows are made using a varitety of frameworks and tools.
-                  </div>
-                </div>
-              </li>
-
-              <li class="col-md-3">
-                <div class="stat-card">
-                  <div class="stat-icon right">
-                    <span class="bg-measure users_single-02"></span
-                    ><i class="glyphicon glyphicon-home"></i>
-                  </div>
-                  <h2 style="font-weight: bold">
-                    Orchestration and Playbooks.
-                  </h2>
-                  <h4 class="stat-num"></h4>
-                  <div class="subtext">
-                    <i class="glyphicon glyphicon-triangle-top txt-ontrack"></i>
-                    SOCFortress crafts playbooks to orchestrate full response
-                    chains.
-                  </div>
-                </div>
-              </li>
-              <li class="col-md-3">
-                <div class="stat-card">
-                  <div class="stat-icon right">
-                    <span class="bg-measure users_single-02"></span
-                    ><i class="glyphicon glyphicon-home"></i>
-                  </div>
-                  <h2 style="font-weight: bold">Orchestrated Response.</h2>
-                  <h4 class="stat-num"></h4>
-                  <div class="subtext">
-                    <i class="glyphicon glyphicon-triangle-top txt-ontrack"></i>
-                    Playbooks integrate different actions and targets.
-                  </div>
-                </div>
-              </li>
-              <li class="col-md-3">
-                <div class="stat-card">
-                  <div class="stat-icon right">
-                    <span class="bg-measure users_single-02"></span
-                    ><i class="glyphicon glyphicon-home"></i>
-                  </div>
-                  <h2 style="font-weight: bold">Artifacts Collection.</h2>
-                  <h4 class="stat-num"></h4>
-                  <div class="subtext">
-                    <i class="glyphicon glyphicon-triangle-top txt-ontrack"></i>
-                    Playbooks execution can extend beyond the affected asset,
-                    collecting additional artifacts.
-                  </div>
-                </div>
-              </li>
-              <li class="col-md-3">
-                <div class="stat-card">
-                  <div class="stat-icon right">
-                    <span class="bg-measure users_single-02"></span
-                    ><i class="glyphicon glyphicon-home"></i>
-                  </div>
-                  <h2 style="font-weight: bold">User Notifications.</h2>
-                  <h4 class="stat-num"></h4>
-                  <div class="subtext">
-                    <i class="glyphicon glyphicon-triangle-top txt-ontrack"></i>
-                    Different communication channels available as part of the
-                    orchestrated response.
-                  </div>
-                </div>
-              </li>
-            </ul>
+              Plugins and Integrations.
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img class="imgshow" height="250" src="img/soar1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Workflows.
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img class="imgshow" height="250" src="img/soar1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Apps Ecosystem.
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img class="imgshow" height="250" src="img/soar1.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-      <div style="padding-top: 100px" class="d-grid gap-3">
-        <div id="app">
-          <button
-            @click="toggle1 = !toggle1"
-            type="button"
-            class="btn btn-secondary btn-lg btn-block block"
-          >
-            Plugins and Integrations.
-          </button>
-          <div v-if="toggle1">
-            <img class="show" height="250" src="img/soar1.png" alt="" />
-          </div>
-        </div>
-        <div>
-          <button
-            @click="toggle2 = !toggle2"
-            type="button"
-            class="btn btn-secondary btn-lg btn-block block"
-          >
-            Workflows.
-          </button>
-          <div v-show="toggle2">
-            <img class="show" src="img/soar2.png" alt="" />
-          </div>
-        </div>
-        <div>
-          <button
-            @click="toggle3 = !toggle3"
-            type="button"
-            class="btn btn-secondary btn-lg btn-block block"
-          >
-            Apps Ecosystem.
-          </button>
-          <div v-show="toggle3">
-            <img class="show" height="250" src="img/soar3.png" alt="" />
-          </div>
-        </div>
-      </div>
+      <br />
     </div>
   </div>
 </template>
@@ -197,6 +202,14 @@ export default {
     setTimeout(this.typeText, this.newTextDelay + 200);
   },
   methods: {
+    n() {
+      const element = document.getElementById("n");
+      element.scrollIntoView({ behavior: "smooth" });
+    },
+    wao() {
+      const element = document.getElementById("wao");
+      element.scrollIntoView({ behavior: "smooth" });
+    },
     typeText() {
       if (
         this.charIndex <
@@ -234,137 +247,18 @@ export default {
   bodyClass: "index-page",
 };
 </script>
+
 <style lang="scss" scoped>
-.show {
+#n,#wao {
+  scroll-margin-top: 100px;
+}
+.imgshow {
   width: 75%;
   height: 450px;
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 12%;
   margin-bottom: 50px;
-}
-.block {
-  margin-left: 12%;
-  display: block;margin-bottom: 20px;;
-  width: 75%;
-  justify-content: center;
-  border: none;
-  background-color: #0446aa;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-}
-ul {
-  list-style-type: none;
-}
-h2.headings {
-  margin-bottom: 20px;
-}
-.stat-card h3 {
-  font-size: 16px;
-  margin-top: 5px;
-  line-height: 20px;
-  padding-right: 45px;
-  color: #333;
-  text-align: left;
-}
-.stat-card {
-  position: relative;
-  display: inline-block;
-  background-color: #fff;
-  width: 320px;
-  min-height: 170px;
-  text-align: left;
-  padding: 15px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(204, 204, 204);
-  border-image: initial;
-  overflow: hidden;
-}
-.stat-icon {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-}
-.stat-icon.right {
-  right: 0px;
-}
-.stat-icon span {
-  position: absolute;
-  z-index: 8;
-  top: -40px;
-  left: 5px;
-  width: 100px;
-  height: 100px;
-  line-height: 120px;
-  border-radius: 50%;
-}
-.stat-icon i {
-  padding-left: 15px;
-  color: rgb(255, 255, 255);
-  z-index: 9;
-  font-size: 24px;
-}
-.bg-target {
-  background-color: #e07000;
-}
-.txt-target {
-  color: #e07000;
-}
-.bg-ontrack {
-  background-color: #007613;
-}
-.txt-ontrack {
-  color: #007613;
-}
-.bg-failing {
-  background-color: #d43e3a;
-}
-.txt-failing {
-  color: #d43e3a;
-}
-.bg-measure {
-  background-color: #186ea5;
-}
-.txt-measure {
-  color: #186ea5;
-}
-.stat-card h4.stat-num {
-  font-size: 45px;
-  text-align: left;
-}
-.stat-card .subtext {
-  font-size: 15px;
-}
-.stat-card .source {
-  font-size: 12px;
-  margin-top: 15px;
-}
-.stat-card .open-btn {
-  margin-top: 15px;
-}
-.typerclass {
-  margin-bottom: 0px;
-  font-weight: bold;
-}
-// all css for type writer
-.img {
-  width: 150px;
-}
-.typer {
-  width: 100%;
-  font-size: 3rem;
-  // font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 h1 {
   margin-bottom: 0px;
@@ -374,6 +268,9 @@ h1 {
     color: #d2b94b;
     // font-size: 60px;
   }
+}
+.card {
+  margin-right: 20px !important;
 }
 
 // Cursor blinking CSS Starts...
