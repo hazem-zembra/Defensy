@@ -43,9 +43,8 @@
 												</div>
 												<div class="col-md-6">
 													<div class="input-group">
-														<span class="input-group-text" id="basic-addon3"><i class="fa fa-globe"></i></span>
 														<input type="text" class="form-control" name="c_website" id="c_website" v-model="formData.c_website"
-															placeholder="Company Website" aria-describedby="basic-addon3" required>
+															placeholder="Company Website" required>
 													</div>
 												</div>
 												
@@ -67,16 +66,16 @@
 															placeholder="Package Details" required>
 													</div>
 												</div>
-												<div class="col-md-6">
-													<div class="input-group">
-														<input type="text" class="form-control" name="project_budget" id="project_budget" v-model="formData.project_budget"
+												<div class="col-md-6 ">
+													<div class="input-group box-shadow">
+														<input type="text" class="form-control form-control-no-box" name="project_budget" id="project_budget" v-model="formData.project_budget"
 															placeholder="Project Budget" required>
-															<span class="input-group-text">$</span>
+															<span class="input-group-text border-radius-left">$</span>
 													</div>
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<textarea name="message" class="form-control" id="message" v-model="formData.message" cols="30"
+														<textarea name="message" class="form-control border-radius" id="message" v-model="formData.message" cols="30"
 															rows="8" placeholder="Message..." required></textarea>
 													</div>
 												</div>
@@ -242,4 +241,5 @@ export default {
 	width: 100%;
 	display: block;
 }
+
 </style>
