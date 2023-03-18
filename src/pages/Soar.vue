@@ -14,25 +14,17 @@
           NIST CSF
           <span class="id-color-2">RS.CO-3:</span>
           Information is shared consistent with response plans. <br />
-          <div>
-            <button
-              href="middle"
-              type="button"
-              class="btn btn-primary"
-              @click="n()"
-            >
-              Show me more
-            </button>
-          </div>
         </div>
         <div class="col-6">
           <h2 class="font-weight-bold">Workflows and Orchestration.</h2>
           NIST CSF
           <span class="id-color-2">RS.CO-2:</span>
           Incidents are reported consistent with established criteria.
-          <div>
-            <button type="button" class="btn btn-primary" @click="wao()">Show me more</button>
-          </div>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-primary " @click="scroll()">
+              Show me more
+            </button>
         </div>
       </div>
     </div>
@@ -45,7 +37,7 @@
       </div>
     </div>
     <div>
-      <div class="container" id="n">
+      <div class="container" id="scroll">
         <div class="">
           <div class="card" style="width: 18rem">
             <div class="card-body">
@@ -95,9 +87,13 @@
           </div>
         </div>
       </div>
+      <div class="container text-center font-weight-bold">
+        <h2 style="color: blue;" >SOAR</h2>
+        <h3 >Security Orchestration, Automation amd Response.</h3>
+      </div>
       <!-- //hereeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
-      <div class="accordion container" >
-        <div class="accordion-item" id="wao">
+      <div class="accordion container">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button
               class="accordion-button"
@@ -202,12 +198,8 @@ export default {
     setTimeout(this.typeText, this.newTextDelay + 200);
   },
   methods: {
-    n() {
-      const element = document.getElementById("n");
-      element.scrollIntoView({ behavior: "smooth" });
-    },
-    wao() {
-      const element = document.getElementById("wao");
+    scroll() {
+      const element = document.getElementById("scroll");
       element.scrollIntoView({ behavior: "smooth" });
     },
     typeText() {
@@ -249,7 +241,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#n,#wao {
+#scroll {
   scroll-margin-top: 100px;
 }
 .imgshow {
