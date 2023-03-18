@@ -1,0 +1,52 @@
+.card{
+    padding:10px 20px;
+    /* backdrop-filter:blur(6px); */
+    background: #03224c;
+    border-radius:20px !important;
+    border:2px solid rgb(255 255 255 / 13%);
+    color:rgba(255,255,255,0.9);
+    /* background-color: rgba(255,255,255,0.06); */
+    box-shadow:20px 20px 22px rgb(0 0 0/20%);
+    height:250px;
+}
+.card-title{
+    font-weight:700;
+}
+.card-text{
+    font-weight:400;
+}
+.circle{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(93deg,#6d00e1,#270c8aeb);
+    transform:translateY(-32px);
+    border-radius:50%;
+    box-shadow:#2100e2db 0px 28px 71px 8px;
+}
+.circle i{
+    font-size:25px;
+    font-weight:700;
+}
+.circle1{
+    background: linear-gradient(93deg, #ffff00,#ff4800);
+    box-shadow:#e2d600db 0px 28px 71px 8px;
+}
+.circle3{
+    background: linear-gradient(93deg, #14ff00,#01995a);
+    box-shadow:#1de200db 0px 28px 71px 8px;
+}
+.circle4{
+  background: linear-gradient(93deg, #452272db,#e2140ddb);
+  box-shadow:#a83222db 0px 28px 71px 8px;
+}
+.circle5{
+  background: linear-gradient(93deg, #c26d27db,#6f8081);
+  box-shadow:#793c0adb 0px 28px 71px 8px;
+}
+.card:hover{
+  box-shadow:#03224c 0px 14px 35px 4px;
+}
