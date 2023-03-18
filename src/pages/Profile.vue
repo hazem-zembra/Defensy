@@ -10,20 +10,20 @@
         <div class="photo-container">
           <img src="img/Logo_Security.png" alt="" />
         </div>
-        <h3 class="title">SOC Platform</h3>
+        <h3 class="title">Defensy SOC Platform</h3>
         <p class="category"></p>
         <div class="content">
           <div class="social-description">
-            <h2>1000</h2>
-            <p>Total Visitors</p>
+            <h2>+{{ count_visitors }}{{ number_abbreviation_visitors }}</h2>
+            <p>Total Visitors/Day</p>
           </div>
           <div class="social-description">
-            <h2>570</h2>
-            <p>Contacts</p>
+            <h2>+570</h2>
+            <p>Interactions</p>
           </div>
           <div class="social-description">
-            <h2>152500</h2>
-            <p>Total followers </p>
+            <h2>+152K</h2>
+            <p>Social Media followers </p>
           </div>
         </div>
       </div>
@@ -131,6 +131,32 @@ export default {
   //   Tabs,
   //   TabPane
   // }
+  data() {
+    return {
+      count_visitors: 0,
+      count_interactions: 0 ,
+      count_followers: 0,
+      total_visitors: 185250,
+      intervalId: null,
+      number_abbreviation_visitors : ''
+    };
+  },
+  mounted() {
+    this.intervalId = setInterval(() => {
+      if (this.total_visitors > 1000){
+        var counter = Math.trunc(this.total_visitors / 1000);;
+        this.number_abbreviation_visitors = 'K';
+          if(counter > 1000){
+            var counter = Math.trunc(counter / 1000);
+            this.number_abbreviation_visitors = 'M';
+          }
+        this.count_visitors++;
+      if (this.count_visitors === counter) {
+        clearInterval(this.intervalId);
+      }
+      }
+    }, 1);
+  }
 };
 </script>
 <style></style>
