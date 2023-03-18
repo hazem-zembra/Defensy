@@ -109,7 +109,7 @@
 @include input-base-padding($padding-input-vertical, $padding-input-horizontal);
 
 .form-group.no-border,
-.input-group.no-border{
+.input-group.no-border  {
     .form-control,
     .form-control + .input-group-text{
         background-color: $opacity-gray-3;
@@ -169,7 +169,7 @@
 .input-group-text {
     background-color: $white-bg;
     border: 1px solid $light-gray;
-    border-radius: $btn-round-radius;
+    // border-radius: $btn-round-radius;
     color: $dark-background;
 
     @include transition-input-focus-color();

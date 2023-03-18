@@ -24,13 +24,13 @@
     </template>
     <template slot="navbar-menu">
       <li class="nav-item">
-        <router-link to="" class="nav-link"><i class="now-ui-icons shopping_shop"></i><p>Home</p></router-link>
+        <router-link to="/" class="nav-link"><i class="now-ui-icons shopping_shop"></i><p>Home</p></router-link>
       </li>
       <li class="nav-item">
         <router-link to="/soar" class="nav-link"><i class="now-ui-icons ui-1_email-85"></i><p>SOAR</p></router-link>
       </li>
       <li class="nav-item">
-        <router-link to="" class="nav-link"><i class="now-ui-icons business_bulb-63"></i><p>About us</p></router-link>
+        <router-link to="/profile" class="nav-link"><i class="now-ui-icons business_bulb-63"></i><p>About us</p></router-link>
       </li>
       <li class="nav-item">
         <router-link to="/contact" class="nav-link"><i class="now-ui-icons ui-1_email-85"></i><p>Contact us</p></router-link>

@@ -3,27 +3,27 @@
     <div class="page-header clear-filter" filter-color="orange">
       <parallax
         class="page-header-image"
-        style="background-image:url('img/bg5.jpg')"
+        style="background-image:url('img/About.jpg')"
       >
       </parallax>
       <div class="container">
         <div class="photo-container">
-          <img src="img/ryan.jpg" alt="" />
+          <img src="img/Logo_Security.png" alt="" />
         </div>
-        <h3 class="title">Ryan Scheinder</h3>
-        <p class="category">Photographer</p>
+        <h3 class="title">SOC Platform</h3>
+        <p class="category"></p>
         <div class="content">
           <div class="social-description">
-            <h2>26</h2>
-            <p>Comments</p>
+            <h2>1000</h2>
+            <p>Total Visitors</p>
           </div>
           <div class="social-description">
-            <h2>26</h2>
-            <p>Comments</p>
+            <h2>570</h2>
+            <p>Contacts</p>
           </div>
           <div class="social-description">
-            <h2>48</h2>
-            <p>Bookmarks</p>
+            <h2>152500</h2>
+            <p>Total followers </p>
           </div>
         </div>
       </div>
@@ -31,32 +31,30 @@
     <div class="section">
       <div class="container">
         <div class="button-container">
-          <a href="#button" class="btn btn-primary btn-round btn-lg">Follow</a>
+          <a href="https://www.defensy.io/" class="btn btn-primary btn-round btn-lg"><i class="fa fa-globe"></i> Visit us</a>
           <a
             href="#button"
             class="btn btn-default btn-round btn-lg btn-icon"
             rel="tooltip"
-            title="Follow me on Twitter"
+            title="Follow me on LinkedIn"
           >
-            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
           </a>
           <a
             href="#button"
             class="btn btn-default btn-round btn-lg btn-icon"
             rel="tooltip"
-            title="Follow me on Instagram"
+            title="Follow me on Facebook"
           >
-            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
           </a>
         </div>
-        <h3 class="title">About me</h3>
+        <h3 class="title">About us</h3>
         <h5 class="description">
-          An artist of considerable range, Ryan — the name taken by
-          Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and
-          records all of his own music, giving it a warm, intimate feel with a
-          solid groove structure. An artist of considerable range.
+         A hub for cybersecurity operations and threat management. It provides real-time monitoring, detection, and response to security incidents.
+        We offer dashboards, visualizations, and other functionalities to provide SOC analysts with real-time visibility into network activity and potential threats. 
         </h5>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-6 ml-auto mr-auto">
             <h4 class="title text-center">My Portfolio</h4>
           </div>
@@ -118,7 +116,7 @@
               </div>
             </tab-pane>
           </tabs>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -129,10 +127,10 @@ import { Tabs, TabPane } from '@/components';
 export default {
   name: 'profile',
   bodyClass: 'profile-page',
-  components: {
-    Tabs,
-    TabPane
-  }
+  // components: {
+  //   Tabs,
+  //   TabPane
+  // }
 };
 </script>
 <style></style>
