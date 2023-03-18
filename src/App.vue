@@ -12,4 +12,6 @@ import { appendFile } from 'fs';
 
 export default {};
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 </script>

@@ -136,7 +136,6 @@
 	</div>
 </template>
 <script>
-import 'bootstrap/dist/css/bootstrap.css';
 import { Button, FormGroupInput } from '@/components';
 export default {
 	data(){
