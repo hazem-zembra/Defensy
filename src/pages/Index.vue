@@ -356,4 +356,7 @@ h1 {
   }
 }
 // Cursor blinking CSS Ends...
+// .slider-card:hover{
+//   border: 1px solid black;
+// }
 </style>
