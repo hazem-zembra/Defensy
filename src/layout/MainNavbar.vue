@@ -72,7 +72,7 @@
       <li class="nav-item">
         <a
           class="nav-link btn btn-success"
-          href="https://www.creative-tim.com/product/vue-now-ui-kit-pro"
+          href="-"
           target="_blank"
         >
           <i class="now-ui-icons media-1_button-play"></i>
