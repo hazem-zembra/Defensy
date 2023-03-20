@@ -41,7 +41,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="hero-images-container">
+              <div class="hero-images-container margin-pic">
                 <img src="img/hero-image-1.png" alt="" />
               </div>
               <div class="hero-images-container-1">
@@ -273,6 +273,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.margin-pic{
+  margin-left: 20% !important;
+}
 .typerclass {
   margin-bottom: 0px;
   font-weight: bold;
