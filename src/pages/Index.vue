@@ -20,7 +20,7 @@
           </h3>
         </div>
         <div class="typer">
-          <h6 class="category category-absolute">
+          <h6 class="category category-absolute In-Top">
             Designed by
             <a href="https://www.defensy.io/" target="_blank">
               <img src="img/DefensyLogoW.png" class="img" />
@@ -358,8 +358,7 @@ h1 {
     color: #2c3e50;
   }
 }
-// Cursor blinking CSS Ends...
-// .slider-card:hover{
-//   border: 1px solid black;
-// }
+.In-top{
+  z-index: 9999;
+}
 </style>
