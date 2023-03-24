@@ -41,15 +41,17 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="hero-images-container margin-pic">
-                <img src="img/hero-image-1.png" alt="" />
+              <div class="hero-images-container m-auto">
+                <div class="sub-hero-image-container">
+                  <img src="img/hazem2.png" alt=""/>
+                </div>
               </div>
-              <div class="hero-images-container-1">
-                <img src="img/hero-image-2.png" alt="" />
-              </div>
-              <div class="hero-images-container-2">
+              
+                <!-- <img src="img/hero-image-2.png" alt="" /> -->
+              
+              <!-- <div class="hero-images-container-2">
                 <img src="img/hero-image-3.png" alt="" />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -358,7 +360,17 @@ h1 {
     color: #2c3e50;
   }
 }
-.In-top{
-  z-index: 9999;
+.sub-hero-image-container{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-200px);
+  transition: 0.3s;
+}
+
+.sub-hero-image-container:hover {
+  transform: translateY(-210px);
 }
 </style>
