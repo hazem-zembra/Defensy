@@ -70,14 +70,10 @@
         </nav-link>
       </drop-down> -->
       <li class="nav-item">
-        <a
-          class="nav-link btn btn-success"
-          href="-"
-          target="_blank"
-        >
+        <router-link to="/dashboard" class="nav-link btn btn-success">
           <i class="now-ui-icons media-1_button-play"></i>
           <p>&nbsp; Live Demo</p>
-        </a>
+        </router-link>
       </li>
 
       <li class="nav-item">
@@ -127,6 +123,7 @@
 <script>
 import { DropDown, Navbar, NavLink } from '@/components';
 import { Popover } from 'element-ui';
+import { RouterLink } from 'vue-router';
 export default {
   name: 'main-navbar',
   props: {
@@ -137,8 +134,9 @@ export default {
     // DropDown,
     Navbar,
     // NavLink,
-    [Popover.name]: Popover
-  }
+    [Popover.name]: Popover,
+    RouterLink
+}
 };
 </script>
 

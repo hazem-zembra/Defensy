@@ -20,7 +20,7 @@
           </h3>
         </div>
         <div class="typer">
-          <h6 class="category category-absolute In-Top">
+          <h6 class="category category-absolute">
             Designed by
             <a href="https://www.defensy.io/" target="_blank">
               <img src="img/DefensyLogoW.png" class="img" />

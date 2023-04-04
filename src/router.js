@@ -66,6 +66,12 @@ export default new Router({
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: 'black' }
       }
+    },
+    {
+      path: '/dashboard',
+      beforeEnter(){
+        window.open("http://127.0.0.1:8000/", "_blank", "noopener");
+      }
     }
   ],
   scrollBehavior: to => {
