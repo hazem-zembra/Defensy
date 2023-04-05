@@ -81,7 +81,7 @@
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<input type="submit" value="Send Message"
+														<input type="submit" @click="sendEmail" value="Send Message"
 															class="btn btn-primary mx-auto">
 														<div class="submitting"></div>
 													</div>
@@ -137,6 +137,7 @@
 </template>
 <script>
 import { Button, FormGroupInput } from '@/components';
+import axios from 'axios';
 export default {
 	data(){
 		return {
@@ -149,9 +150,46 @@ export default {
 				business_type : '',
 				package_detail : '',
 				project_budget : '',
-				message : ''
+				message : '',
+				errorMessage : '',
+				successMessage : ''
 			}
 		};
+	},
+	methods :{
+		sendEmail() {
+    const apiKey = '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';
+    const apiUrl = 'https://api.sendinblue.com/v3/smtp/email';
+    const payload = {
+      sender: {
+        name: 'John Doe',
+        email: 'ha.zem.abbassi6@gmail.com',
+      },
+      to: [
+        {
+          email: 'ha.zem.abbassi6@gmail.com',
+          name: 'Recipient Name',
+        },
+      ],
+      subject: 'Example Subject',
+      htmlContent: '<p>Example Email Body</p>',
+    };
+
+    axios
+      .post(apiUrl, payload, {
+        headers: {
+          'api-key': apiKey,
+          'Content-Type': 'application/json',
+        },
+      })
+      .then(response => {
+        console.log('Email sent successfully:', response.data);
+      })
+      .catch(error => {
+        console.error('Failed to send email:', error);
+      });
+  },		
+
 	},
 	name: 'login-page',
 	bodyClass: 'login-page',
