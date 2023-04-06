@@ -23,7 +23,7 @@
           <h6 class="category category-absolute">
             Designed by
             <a href="https://www.defensy.io/" target="_blank">
-              <img src="img/DefensyLogoW.png" class="img" />
+              <img src="img/RG.png" class="img1" alt="Responsive image"/>
             </a>
             <!-- . Coded by
           <a href="https://www.creative-tim.com" target="_blank">
@@ -275,6 +275,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.img1 {
+			width: 25%; /* Set image width to 50% of its original size */
+			height: auto; /* Automatically adjust height to maintain aspect ratio */
+			opacity: 0.8; /* Set image opacity to 50% */
+		}
 //recently added
 .page-header .content-center {
     position: absolute;

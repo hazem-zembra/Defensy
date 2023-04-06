@@ -9,7 +9,7 @@
         </h2>
       </div>
       <img src="img/basic.png" alt="">
-      <div class="price-section">
+      <!-- <div class="price-section">
         <div class="price-area">
           <div class="inner-area">
             <span class="text">Dt &nbsp;</span>
@@ -19,10 +19,10 @@
           </div>
         </div>
       </div>
-      <div class="package-name"></div>
+      <div class="package-name"></div> -->
       <ul class="features">
-        <div class="btn"><button>Add to Cart</button></div>
-        <p class="aj_des">Dt159/mo when you renew</p>
+        <!-- <div class="btn"><button>Add to Cart</button></div>
+        <p class="aj_des">Dt159/mo when you renew</p> -->
         <li>
           <span class="list-name">Surveillance 8h/5j</span>
           <span class="icon check"><i class="fas fa-check"></i></span>
@@ -47,12 +47,12 @@
           <span class="icon check"><i class="fas fa-check"></i></span>
         </li>
       </ul>
-      <div>
+      <!-- <div>
         <h2>
           See all features
           <span class="icon cross"><i class="fa fa-angle-down"></i></span>
         </h2>
-      </div>
+      </div> -->
     </div>
 <!-- second plan -->
 <div class="table basic">
@@ -63,7 +63,7 @@
         </h2>
       </div><br><br>
       <img src="img/silver.png" alt="">
-      <div class="price-section">
+      <!-- <div class="price-section">
         <div class="price-area">
           <div class="inner-area">
             <span class="text">Dt &nbsp;</span>
@@ -73,10 +73,10 @@
           </div>
         </div>
       </div>
-      <div class="package-name"></div>
+      <div class="package-name"></div> -->
       <ul class="features">
-        <div class="btn"><button>Add to Cart</button></div>
-        <p class="aj_des">Dt159/mo when you renew</p>
+        <!-- <div class="btn"><button>Add to Cart</button></div>
+        <p class="aj_des">Dt159/mo when you renew</p> -->
         <li>
           <span class="list-name">Surveillance 8h/5j</span>
           <span class="icon check"><i class="fas fa-check"></i></span>
@@ -101,12 +101,12 @@
           <span class="icon check"><i class="fas fa-check"></i></span>
         </li>
       </ul>
-      <div>
+      <!-- <div>
         <h2>
           See all features
           <span class="icon cross"><i class="fa fa-angle-down"></i></span>
         </h2>
-      </div>
+      </div> -->
     </div>
 
     <!-- third plan -->
@@ -116,7 +116,7 @@
       </div><br>
       <img src="img/gold.png" alt="">
       <div class="ribbon"><span>BEST VALUE</span></div>
-      <div class="price-section">
+      <!-- <div class="price-section">
         <div class="price-area">
           <div class="inner-area">
             <span class="text">Dt</span>
@@ -126,10 +126,10 @@
           </div>
         </div>
       </div>
-      <div class="package-name"></div>
+      <div class="package-name"></div> -->
       <ul class="features">
-        <div class="btn"><button>Add to Cart</button></div>
-        <p class="aj_des">Dt159/mo when you renew</p>
+        <!-- <div class="btn"><button>Add to Cart</button></div>
+        <p class="aj_des">Dt159/mo when you renew</p> -->
         <li>
           <span class="list-name">Surveillance et Alerte 24h/7
 </span>
@@ -157,12 +157,12 @@
           <span class="icon check"><i class="fas fa-check"></i></span>
         </li>
       </ul>
-      <div class="premium_all">
+      <!-- <div class="premium_all">
         <h2>
           See all features
           <span class="icon cross"><i class="fa fa-angle-down"></i></span>
         </h2>
-      </div>
+      </div> -->
     </div>
     <div class="table ultimate" style="padding: 0px;">
       <!-- forth plan -->
@@ -170,7 +170,7 @@
         <h2>Platinum : <br />SOC as a service</h2>
       </div>
       <img src="img/platunium.png" alt="" style="padding: 30px;">
-      <div class="price-section" >
+      <!-- <div class="price-section" >
         <div class="price-area" >
           <div class="inner-area">
             <span class="text">Dt</span>
@@ -180,10 +180,10 @@
           </div>
         </div>
       </div>
-      <div class="package-name"></div>
+      <div class="package-name"></div> -->
       <ul class="features">
-        <div class="btn"><button>Add to Cart</button></div>
-        <p class="aj_des">Dt159/mo when you renew</p>
+        <!-- <div class="btn"><button>Add to Cart</button></div>
+        <p class="aj_des">Dt159/mo when you renew</p> -->
         <li>
           <span class="list-name">Surveillance et alerte 24h/7</span>
           <span class="icon check"><i class="fas fa-check"></i></span>
@@ -220,12 +220,12 @@
           <span class="icon check"><i class="fas fa-check"></i></span>
         </li>
       </ul>
-      <div>
+      <!-- <div>
         <h2>
           See all features
           <span class="icon cross"><i class="fa fa-angle-down"></i></span>
         </h2>
-      </div>
+      </div> -->
     </div>
     
   </div>

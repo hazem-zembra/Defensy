@@ -10,7 +10,7 @@
         <div class="photo-container">
           <img src="img/Logo_Security.png" alt="" />
         </div>
-        <h3 class="title">Defensy SOC Platform</h3>
+        <h3 class="title">RAISEGUARD SOC Platform</h3>
         <p class="category"></p>
         <div class="content">
           <div class="social-description">
@@ -31,23 +31,23 @@
     <div class="section">
       <div class="container">
         <div class="button-container">
-          <a href="https://www.defensy.io/" class="btn btn-primary btn-round btn-lg"><i class="fa fa-globe"></i> Visit us</a>
+          <a href="https://raiseguard.net/" class="btn btn-primary btn-round btn-lg"><i class="fa fa-globe"></i> Visit us</a>
           <a
-            href="#button"
+            href="https://www.linkedin.com/company/raiseguard/  "
             class="btn btn-default btn-round btn-lg btn-icon"
             rel="tooltip"
             title="Follow me on LinkedIn"
           >
             <i class="fab fa-linkedin"></i>
           </a>
-          <a
+          <!-- <a
             href="#button"
             class="btn btn-default btn-round btn-lg btn-icon"
             rel="tooltip"
             title="Follow me on Facebook"
           >
             <i class="fab fa-facebook-square"></i>
-          </a>
+          </a> -->
         </div>
         <h3 class="title">About us</h3>
         <h5 class="description">

@@ -8,8 +8,8 @@
 
   >
     <template>
-      <a href="https://www.defensy.io/" target="_blank">
-            <img src="img/DefensyLogoW.png" class="img" /> </a>
+      <a href="https://raiseguard.net/" target="_blank">
+            <img src="img/RG.png" class="img" /> </a>
       <el-popover
         ref="popover1"
         popper-class="popover"
@@ -82,14 +82,14 @@
           rel="tooltip"
           title="Our Official Website"
           data-placement="bottom"
-          href="https://www.defensy.io/"
+          href="https://raiseguard.net/"
           target="_blank">
           <i class="now-ui-icons objects_globe"></i>
           <p class="d-lg-none d-xl-none">Website</p>
         </a>
       </li>
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a
           class="nav-link"
           rel="tooltip"
@@ -100,7 +100,7 @@
           <i class="fab fa-facebook-square"></i>
           <p class="d-lg-none d-xl-none">Facebook</p>
         </a>
-      </li>
+      </li> -->
 
       <li class="nav-item">
         <a
@@ -108,7 +108,7 @@
           rel="tooltip"
           title="Follow us on Linkedin"
           data-placement="bottom"
-          href="https://www.linkedin.com/company/defensy/"
+          href="https://www.linkedin.com/company/raiseguard/"
           target="_blank">
           <i class="fab fa-linkedin"></i>
           <p class="d-lg-none d-xl-none">Linkedin</p>

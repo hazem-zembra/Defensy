@@ -8,14 +8,10 @@
       <nav>
         <ul>
           <li>
-            <a href="https://www.defensy.io/">
-              DefensyLab
-            </a>
+            <a href="https://raiseguard.net/" target="_blank"> raiseguard </a>
           </li>
           <li>
-            <a href="">
-              About Us
-            </a>
+            <a href=""> About Us </a>
           </li>
           <li>
             <router-link to="/contact">Contact Us</router-link>
@@ -23,13 +19,13 @@
         </ul>
       </nav>
       <div class="copyright">
-        &copy; {{ year }}, <a class="category category-absolute">
-          Designed by
-          <a href="https://www.defensy.io/" target="_blank">
-            <img src="img/DefensyLogoW.png" class="invision-logo" /> </a
+        &copy; {{ year }},
+        <a class="category category-absolute">
+          Designed by &nbsp;
+          <a href="https://raiseguard.net/" target="_blank">
+            <img src="img/RG.png" class="invision-logo" /> &nbsp; </a
           >.
-         
-          </a>
+        </a>
       </div>
     </div>
   </footer>
@@ -38,13 +34,13 @@
 export default {
   props: {
     backgroundColor: String,
-    type: String
+    type: String,
   },
   data() {
     return {
-      year: new Date().getFullYear()
+      year: new Date().getFullYear(),
     };
-  }
+  },
 };
 </script>
 <style></style>

@@ -121,7 +121,7 @@
 												</div>
 												<div class="text">
 													<p><span style="color:white;font-weight: bold;">Email:</span> <a
-															href="mailto:info@yoursite.com">contact@defensy.io</a></p>
+															href="mailto:info@yoursite.com">contact@raiseguard.net</a></p>
 												</div>
 											</div>
 										</div>
