@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header clear-filter" filter-color="orange" >
       <parallax
         class="page-header-image"
         style="background-image: url('img/Cybersecurity.jpg')"
       >
       </parallax>
-      <div>
+      <div >
         <div class="content-center brand">
           <img class="n-logo" src="img/Logo_Security.png" alt="" />
           <h2 class="typerclass">SOC platform</h2>
@@ -198,7 +198,7 @@ import NucleoIconsSection from "./components/NucleoIconsSection";
 import SignupForm from "./components/SignupForm";
 import ExamplesSection from "./components/ExamplesSection";
 import DownloadSection from "./components/DownloadSection";
-import Plans from "./components/Plans";
+import Plans from "./components/Plans.vue";
 import carousel from "vue-owl-carousel";
 
 export default {
@@ -275,6 +275,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+//recently added
+.page-header .content-center {
+    position: absolute;
+    top: 40%;}
+
+    .index-page .page-header  .category-absolute {
+    top: 95vh;}
+    //end recently added
 .margin-pic{
   margin-left: 20% !important;
 }
