@@ -21,7 +21,7 @@
 											and leveraging the latest technology, to enhance clients' security posture and
 											protect their systems and data.
 										</div>
-										<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div id="contactForm" name="contactForm" class="contactForm">
 											<div class="row">
 												<div class="col-md-6">
 													<div class="input-group">
@@ -87,7 +87,7 @@
 													</div>
 												</div>
 											</div>
-										</form>
+										</div>
 									</div>
 								</div>
 								<div class="col-lg-4 mb-5">
@@ -158,23 +158,28 @@ export default {
 	},
 	methods :{
 		sendEmail() {
-    const apiKey = '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';
+			console.log('Hi');
+    const apiKey = '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';
     const apiUrl = 'https://api.sendinblue.com/v3/smtp/email';
+	let name = this.formData.first_name + ' ' + this.formData.last_name; 
+	let message_to_send = '<h3>'+this.formData.first_name + this.formData.last_name +'</h3><h4>Business name: '+ this.formData.business_name +'</h4><h4>Business type: '+ this.formData.business_type +'</h4><h4>Package detail: '+ this.formData.package_detail + '</h4><h4>Project budget: '+this.formData.project_budget+'$</h4><p><strong>Other informations: </strong>'+ this.formData.message +' </p><ul><li><strong>Email: </strong>'+ this.formData.email + '</li><li><strong>Website :</strong>'+ this.formData.c_website +'</li></ul>';
     const payload = {
       sender: {
-        name: 'John Doe',
-        email: 'ha.zem.abbassi6@gmail.com',
+        //name: first_name + last_name,
+        name:name,
+		email: 'ha.zem.abbassi6@gmail.com',
       },
       to: [
         {
           email: 'ha.zem.abbassi6@gmail.com',
-          name: 'Recipient Name',
+          name: 'RAISEGUARD',
         },
       ],
-      subject: 'Example Subject',
-      htmlContent: '<p>Example Email Body</p>',
-    };
-
+      subject: 'Contact',
+      //htmlContent: '<h3>'+first_name + last_name +'</h3><h4>Business name: '+business_name + business_type + '</h4><h4>'+ package_detail + '</h4><h4>'+ project_budget + '</h4><p> '+ message +' </p><ul><li>'+ email + '</li><li>'+ c_website +'</li></ul>',
+	htmlContent: message_to_send,
+	};
+console.log('Test');
     axios
       .post(apiUrl, payload, {
         headers: {
